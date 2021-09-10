@@ -244,7 +244,7 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(array, number) {
+function get20s(array) {
   const newArr = [];
   for (let i = 0; i < array.length; i++) {
     if (array[i].years.split(" - ")[0] > 1900 && array[i].years.split(" - ")[1] < 2000) {
@@ -264,17 +264,16 @@ Use removeArtist to do the following:
 4. Return the length of the remaining dataset.
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
-
-function removeArtist(array, number) {
-   const newArray = array.indexOf(number);
-   if (newArray > -1) {
-     array.splice(newArray, 1);
+// new array with all the artists from the old array
+function removeArtist(array, index) {
+   const newArray = [];
+   for ( let i = 0; i < array.length; i++){
+     if (i !== index) {
+      newArray.push(array[i]);
+     }
+     
    }
-   return array;
-  // for (let i = 0; i < array.length; i ++){
-  //   array[i].splice();
-  // }
-  // return array.length;
+   return newArray.length;
 }
 
 
