@@ -245,9 +245,10 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
-  const newArray = [];
-  for (let i = 0; i < array.length; i++)
-  if (array[i].split)
+//   const newArray = [];
+//   for (let i = 0; i < array.length; i++)
+//   if (array[i].split)
+// }
 }
 
 
@@ -283,10 +284,18 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array) {
+  array.push(
+    { id: 20,
+      name: 'Anthony Negron', 
+      years: 1995 - 'Present Day',
+      genre: 'Web Design', 
+      nationality: 'Hispanic',
+      bio: `I've decided to pursue Web Design to have a career that mixes my passion for tech, my curiosity for how things work, and my need for artistic creativity in my workspace.`
+    });
+  return array;
 }
-
+console.log(addArtist(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
