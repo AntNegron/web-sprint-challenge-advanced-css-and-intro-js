@@ -205,8 +205,8 @@ button:hover {
   width: 100%;
 }
 
-/* using 550px as max width because 500px was only snapping/responding at around 480px, and didn't want to have repetitive code by creating a new @media tag */
-@media (max-width: 550px) {
+/* using 517px as max width because 500px was only snapping/responding at around 480px, and didn't want to have repetitive code by creating a new @media tag */
+@media (max-width: 517px) {
   nav {
     width: 60%;
     display: flex;
